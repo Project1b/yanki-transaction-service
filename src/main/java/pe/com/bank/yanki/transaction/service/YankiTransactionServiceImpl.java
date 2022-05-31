@@ -50,7 +50,7 @@ public class YankiTransactionServiceImpl  implements YankiTransactionService{
 	}
 	
 	 @Bean
-	 Consumer<WalletOperationDTO> wallet() {
+	 Consumer<WalletOperationDTO> walletTransaction() {
 	    return walletOperationDTO -> {
 	    	
 	  	    yankiTransactionRepository.save(new YankiTransacionDocument(null,walletOperationDTO.getAmount(),new Date(),walletOperationDTO.getSourceWalletId(),

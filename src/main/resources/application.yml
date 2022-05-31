@@ -12,11 +12,11 @@ spring:
           config: org.apache.kafka.common.security.scram.ScramLoginModule required username="mw0qp7ns" password="B3QZdEOoxokd2bX0vclUkuAGOxxygn7E";
   cloud:
    function:
-      definition: wallet
+      definition: walletTransaction
    stream:
       bindings:
-        wallet-in-0:
-          destination: mw0qp7ns-wallet
+        walletTransaction-in-0:
+          destination: mw0qp7ns-wallet-transaction
   data: 
     mongodb:
       uri: mongodb+srv://erick:erickpinglo@cluster0.xdfgh.mongodb.net/bank
